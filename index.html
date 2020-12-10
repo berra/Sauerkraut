@@ -56,44 +56,82 @@
     footer a {
       color: #666;
     }
+    header {
+      margin-block-start: 2em;
+    }
+    header h1 {
+      line-height: 1.2;
+      flex-direction: column;
+      display: flex;
+      font-size: clamp(2rem, 6vw, 10rem);
+      margin-block-start: 0;
+      margin-block-end: 1rem;
+    }
+    header span {
+      color: rgba(0, 0, 0, .7);
+      font-weight: 300;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 0.3em;
+      margin: 0;
+    }
+
+    .preamble {
+      font-size: clamp(100%, 2vw, 120%);
+      font-weight: 300;
+      letter-spacing: 0.02em;
+      line-height: 1.8;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
   </style>
 </head>
 
 <body>
 
-<h1>Surkål</h1>
+<header id="header">
+  <h1>
+    <span>Ett recept på</span>
+    Surkål
+  </h1>
+</header>
 
-<p>Surkål är vitkål som fermenterats med hjälp av mjölksyrabakterier.</p>
-<p>Syrningsprocessen gör både att kålen håller längre och får bättre näringsvärde.</p>
+<main id="main">
+  <section class="preamble">
+    <p>Surkål är vitkål som fermenterats med hjälp av mjölksyrabakterier.</p>
+    <p>Syrningsprocessen gör både att kålen håller längre och får bättre näringsvärde.</p>
+  </section>
 
-<h2>Ingredienser</h2>
+  <section id="ingredienser">
+    <h2>Ingredienser</h2>
+    <ul>
+      <li>1 kg vitkål</li>
+      <li>15 g salt (jodfritt)</li>
+    </ul>
+  </section>
 
-<ul>
-  <li>1 kg vitkål</li>
-  <li>15 g salt (jodfritt)</li>
-</ul>
+  <section id="metod">
+    <h2>Gör så här</h2>
+    <ol>
+      <li>Skölj kålen. Ta bort eventuella fula blad ytterst.</li>
+      <li>Dela kålen på mitten och skär bort rotstocken. Strimla vitkålen så tunt du kan. Riv rotstocken fint.</li>
+      <li>Lägg kålen i en stor bunke och strö över saltet. Blanda snabbt och sen kan du låta det stå runt en halvtimme för att dra vatten ur kålen.</li>
+      <li>Massera kålen ordentligt så att du kan krama ut rikligt med vätska ur en näve kål.</li>
+      <li>Pressa ner en näve kål i taget i ditt syrningskärl. Exempelvis 1.5 liters glasburk med bygellås och gummiring.</li>
+      <li>Häll i vätskan från bunken. Lämna några centimeter luft till kanten.</li>
+      <li>Tyng ner kålen under vattenytan. Du kan använda en fryspåse som du fyller med vatten och knyter.</li>
+      <li>Låt burken stå mörkt i rumstemperatur i minst 14 dagar gärna längre. Ställ den på en tallrik om vätska rinner ut från burken.</li>
+      <li>Ställ burken i kylskåp. Låt den gärna stå ett par veckor till innan du äter den.</li>
+    </ol>
+  </section>
 
-<h2>Gör så här</h2>
+  <section id="kryddningar">
+    <h2>Kryddor</h2>
+    <p>Förutom salt så kan du krydda surkålen på olika sätt.
+      Några vanliga kryddor är kummin, enbär, fänkålsfrö, nejlikor och svartpeppar.</p>
+    <p>
+      Annat som är roligt att lägga i är exempelvis: chili, morot, äpple, lagerblad, färska örter, zest från citron.</p>
+  </section>
 
-<ol>
-  <li>Skölj kålen. Ta bort eventuella fula blad ytterst.</li>
-  <li>Dela kålen på mitten och skär bort rotstocken. Strimla vitkålen så tunt du kan. Riv rotstocken fint.</li>
-  <li>Lägg kålen i en stor bunke och strö över saltet. Blanda snabbt och sen kan du låta det stå runt en halvtimme för att dra vatten ur kålen.</li>
-  <li>Massera kålen ordentligt så att du kan krama ut rikligt med vätska ur en näve kål.</li>
-  <li>Pressa ner en näve kål i taget i ditt syrningskärl. Exempelvis 1.5 liters glasburk med bygellås och gummiring.</li>
-  <li>Häll i vätskan från bunken. Lämna några centimeter luft till kanten.</li>
-  <li>Tyng ner kålen under vattenytan. Du kan använda en fryspåse som du fyller med vatten och knyter.</li>
-  <li>Låt burken stå mörkt i rumstemperatur i minst 14 dagar gärna längre. Ställ den på en tallrik om vätska rinner ut från burken.</li>
-  <li>Ställ burken i kylskåp. Låt den gärna stå ett par veckor till innan du äter den.</li>
-</ol>
-
-<h2>Kryddor</h2>
-<p>Förutom salt så kan du krydda surkålen på olika sätt.
-  Några vanliga kryddor är kummin, enbär, fänkålsfrö, nejlikor och svartpeppar.</p>
-<p>
-  Annat som är roligt att lägga i är exempelvis: chili, morot, äpple, lagerblad, färska örter, zest från citron.</p>
-
-
+</main>
 </body>
 
 </html>
